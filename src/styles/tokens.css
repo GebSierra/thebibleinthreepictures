@@ -1,0 +1,20 @@
+/*
+ * Placeholder tokens. Task T2.2 replaces this file with the design Geb picks.
+ * Colors are the 60-second film's. Stage B is the film's grey mix of cream and ground.
+ */
+:root {
+  /* From Geb's 60-second film: ground, gold, cream, sky. */
+  --bg: #0d1626;
+  --surface: #16223a;
+  --ink: #f3f1ea;
+  --ink-muted: #b9bfd3;
+  --line: #3a4670;
+  --stage-A: #ffd23f;
+  --stage-B: #8f939b;
+  --stage-C1: #9fe3f0;
+  --stage-C2: #f3f1ea;
+  --strike: #e2574c;
+  --font-head: 'Archivo', system-ui, sans-serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+  --radius: 14px;
+}

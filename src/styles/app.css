@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.5 var(--font-body);
+}
+h1, h2 { font-family: var(--font-head); margin: 0; line-height: 1.15; }
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+p { margin: 0; }
+.shell {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: max(20px, env(safe-area-inset-top)) 20px max(28px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.eyebrow { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-muted); }
+.note, .muted { color: var(--ink-muted); font-size: 15px; }
+.badge {
+  display: inline-block; margin-left: 8px; padding: 1px 7px; border-radius: 6px;
+  font-size: 12px; font-weight: 700; letter-spacing: .05em;
+  color: var(--bg); background: var(--stage-A);
+}
+.gap { color: var(--ink-muted); font-style: italic; }
+.lessons { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.lesson {
+  background: var(--surface); border-radius: var(--radius); padding: 16px 18px;
+  display: flex; flex-direction: column; gap: 6px; border-top: 4px solid var(--line);
+}
+.lesson.stage-A { border-top-color: var(--stage-A); }
+.lesson.stage-B { border-top-color: var(--stage-B); }
+.lesson.stage-C1 { border-top-color: var(--stage-C1); }
+.lesson.stage-C2 { border-top-color: var(--stage-C2); }
+
+/* Timeline: art ported from Geb's film */
+.timeline { width: 100%; height: auto; display: block; overflow: visible; }
+.timeline-line { stroke: var(--ink); stroke-width: 2.5; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--stage-A) 45%, transparent)); }
+.timeline-node { fill: var(--bg); stroke: var(--ink-muted); stroke-width: 1.5; }
+.timeline-slot.is-current .timeline-node { fill: var(--stage-A); stroke: none; }
+.timeline-blank { fill: none; stroke: var(--line); }
+.stage-A .disc-fill { fill: var(--stage-A); }
+.stage-B .disc-fill { fill: var(--stage-B); }
+.stage-C1 .disc-fill { fill: var(--stage-C1); }
+.art-ink { fill: var(--bg); }
+.art-line { fill: none; stroke: var(--bg); }
+.cross-glyph rect { fill: var(--stage-C2); }
+.cross-halo { fill: color-mix(in srgb, var(--stage-C2) 7%, transparent); }
+.timeline-slot.is-struck .timeline-art > g { opacity: .45; }
+.timeline-strike { stroke: var(--strike); }
