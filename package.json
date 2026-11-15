@@ -7,8 +7,8 @@
     "node": ">=24"
   },
   "scripts": {
-    "content": "node scripts/build-content.mjs",
-    "content:prod": "node scripts/build-content.mjs --production",
+    "content": "node scripts/build-content.ts",
+    "content:prod": "node scripts/build-content.ts --production",
     "dev": "npm run content && vite",
     "build": "npm run content && tsc -b && vite build",
     "build:prod": "npm run content:prod && tsc -b && vite build",
