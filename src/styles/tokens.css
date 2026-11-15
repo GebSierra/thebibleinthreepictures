@@ -1,17 +1,18 @@
 /*
  * Placeholder tokens. Task T2.2 replaces this file with the design Geb picks.
- * Stage colors are the book's (design canvas), lightened where needed for a dark ground.
+ * Colors are the 60-second film's. Stage B is the film's grey mix of cream and ground.
  */
 :root {
-  --bg: #0b1430;
-  --surface: #131f45;
-  --ink: #f4f1e8;
+  /* From Geb's 60-second film: ground, gold, cream, sky. */
+  --bg: #0d1626;
+  --surface: #16223a;
+  --ink: #f3f1ea;
   --ink-muted: #b9bfd3;
   --line: #3a4670;
-  --stage-A: #e2b33a;
-  --stage-B: #a9adb6;
-  --stage-C1: #5aa9e6;
-  --stage-C2: #f4f1e8;
+  --stage-A: #ffd23f;
+  --stage-B: #8f939b;
+  --stage-C1: #9fe3f0;
+  --stage-C2: #f3f1ea;
   --strike: #e2574c;
   --font-head: 'Archivo', system-ui, sans-serif;
   --font-body: 'Figtree', system-ui, sans-serif;

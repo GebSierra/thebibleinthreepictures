@@ -36,14 +36,18 @@ p { margin: 0; }
 .lesson.stage-C1 { border-top-color: var(--stage-C1); }
 .lesson.stage-C2 { border-top-color: var(--stage-C2); }
 
-/* Timeline */
-.timeline { width: 100%; height: auto; display: block; }
-.timeline-line { stroke: var(--line); }
-.timeline-glyph { color: var(--ink); }
-.timeline-slot.is-current .timeline-glyph { color: var(--stage-A); }
-.timeline-blank { stroke: var(--line); }
+/* Timeline: art ported from Geb's film */
+.timeline { width: 100%; height: auto; display: block; overflow: visible; }
+.timeline-line { stroke: var(--ink); stroke-width: 2.5; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--stage-A) 45%, transparent)); }
+.timeline-node { fill: var(--bg); stroke: var(--ink-muted); stroke-width: 1.5; }
+.timeline-slot.is-current .timeline-node { fill: var(--stage-A); stroke: none; }
+.timeline-blank { fill: none; stroke: var(--line); }
+.stage-A .disc-fill { fill: var(--stage-A); }
+.stage-B .disc-fill { fill: var(--stage-B); }
+.stage-C1 .disc-fill { fill: var(--stage-C1); }
+.art-ink { fill: var(--bg); }
+.art-line { fill: none; stroke: var(--bg); }
+.cross-glyph rect { fill: var(--stage-C2); }
+.cross-halo { fill: color-mix(in srgb, var(--stage-C2) 7%, transparent); }
+.timeline-slot.is-struck .timeline-art > g { opacity: .45; }
 .timeline-strike { stroke: var(--strike); }
-.stage-A .timeline-bar { fill: var(--stage-A); }
-.stage-B .timeline-bar { fill: var(--stage-B); }
-.stage-C1 .timeline-bar { fill: var(--stage-C1); }
-.stage-C2 .timeline-bar { fill: var(--stage-C2); }

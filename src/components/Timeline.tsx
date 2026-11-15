@@ -2,10 +2,11 @@
  * The timeline: the three pictures and the cross on one line (plan task T3.2).
  * Shown on every screen. The three pictures can be struck through. The cross never is.
  *
- * Glyphs are simple stand-ins. The October prototype's drawings (drawn globe,
- * Geb's Israel outline from assets/israel-path.txt) replace them when that
- * folder can be read. Colors come from CSS variables, set by tokens.css.
+ * The drawings are ported from Geb's 60-second film (see src/lib/art.ts):
+ * the drawn globe, the pyramids, his Israel outline, and the glowing cross.
+ * Colors come from CSS variables set by tokens.css.
  */
+import { GLOBE_LAND, ISRAEL_PATH } from '../lib/art.ts'
 import { PICTURES, type PictureName } from '../lib/pictures.ts'
 
 export interface TimelineProps {
@@ -18,26 +19,56 @@ export interface TimelineProps {
   className?: string
 }
 
-const W = 360
-const H = 96
+const W = 400
+const H = 120
 const SLOT = W / 4
+const R = 34 // disc radius on screen
+const CY = 48
+const S = R / 140 // the film draws discs at radius 140
+const LINE_Y = 104
 
-function Glyph({ name }: { name: PictureName }) {
+function Art({ name }: { name: PictureName }) {
   switch (name) {
     case 'The World':
       return (
         <g>
-          <circle r="18" fill="none" strokeWidth="3" />
-          <ellipse rx="8" ry="18" fill="none" strokeWidth="2" />
-          <path d="M-18 0H18M-15 -9H15M-15 9H15" strokeWidth="2" />
+          <circle r="140" className="disc-fill" />
+          <clipPath id="tl-globe">
+            <circle r="88" />
+          </clipPath>
+          <g clipPath="url(#tl-globe)">
+            <path d={GLOBE_LAND} className="art-ink" opacity="0.85" />
+          </g>
+          <circle r="88" className="art-line" strokeWidth="5" />
         </g>
       )
     case 'Egypt':
-      return <path d="M-20 16L0 -18L20 16Z" fill="none" strokeWidth="3" strokeLinejoin="round" />
+      return (
+        <g>
+          <circle r="140" className="disc-fill" />
+          <polygon points="-106,56 -18,-72 56,56" className="art-ink" opacity="0.8" />
+          <polygon points="4,56 66,-20 116,56" className="art-ink" opacity="0.55" />
+          <path d="M-118 58 H118" className="art-line" strokeWidth="5" strokeLinecap="round" />
+        </g>
+      )
     case 'The Land':
-      return <path d="M-6 -18C2 -12 4 -4 2 4C0 10 6 14 4 18L-4 18C-6 10 -10 4 -8 -4C-7 -10 -10 -14 -6 -18Z" fill="none" strokeWidth="3" strokeLinejoin="round" />
+      return (
+        <g>
+          <circle r="140" className="disc-fill" />
+          <g transform="scale(0.586) translate(-249.9 -250)">
+            <path d={ISRAEL_PATH} className="art-ink" opacity="0.22" />
+            <path d={ISRAEL_PATH} className="art-line" strokeWidth="8.5" strokeLinejoin="round" />
+          </g>
+        </g>
+      )
     case 'The Cross':
-      return <path d="M0 -20V20M-12 -8H12" strokeWidth="4" strokeLinecap="round" />
+      return (
+        <g className="cross-glyph">
+          <circle r="150" className="cross-halo" />
+          <rect x="-9" y="-118" width="18" height="236" rx="3" />
+          <rect x="-62" y="-62" width="124" height="18" rx="3" />
+        </g>
+      )
   }
 }
 
@@ -50,7 +81,7 @@ export function Timeline({ shown, struck = [], current, className }: TimelinePro
       role="group"
       aria-label="Timeline of the Bible in three pictures and the cross"
     >
-      <line className="timeline-line" x1="8" x2={W - 8} y1={H - 14} y2={H - 14} strokeWidth="2" />
+      <line className="timeline-line" x1="10" x2={W - 10} y1={LINE_Y} y2={LINE_Y} />
       {PICTURES.map((p, i) => {
         const visible = show.has(p.name)
         const isStruck = visible && p.strikable && struck.includes(p.name)
@@ -63,20 +94,18 @@ export function Timeline({ shown, struck = [], current, className }: TimelinePro
             key={p.key}
             data-picture={p.name}
             data-struck={isStruck ? 'true' : 'false'}
-            className={`timeline-slot stage-${p.key}${current === p.name ? ' is-current' : ''}${visible ? '' : ' is-empty'}`}
+            className={`timeline-slot stage-${p.key}${current === p.name ? ' is-current' : ''}${visible ? '' : ' is-empty'}${isStruck ? ' is-struck' : ''}`}
             role="img"
             aria-label={label}
           >
-            <rect className="timeline-bar" x={SLOT * i + 6} y={H - 18} width={SLOT - 12} height="8" rx="4" />
+            <circle className="timeline-node" cx={cx} cy={LINE_Y} r={current === p.name ? 6 : 4} />
             {visible ? (
-              <g transform={`translate(${cx} ${H / 2 - 10})`} className="timeline-glyph" stroke="currentColor">
-                <Glyph name={p.name} />
+              <g transform={`translate(${cx} ${CY}) scale(${S})`} className="timeline-art">
+                <Art name={p.name} />
+                {isStruck && <line className="timeline-strike" x1="-128" y1="-136" x2="128" y2="136" strokeWidth="14" strokeLinecap="round" />}
               </g>
             ) : (
-              <circle className="timeline-blank" cx={cx} cy={H / 2 - 10} r="18" fill="none" strokeDasharray="4 4" strokeWidth="2" />
-            )}
-            {isStruck && (
-              <line className="timeline-strike" x1={cx - 26} y1={H / 2 + 10} x2={cx + 26} y2={H / 2 - 30} strokeWidth="4" strokeLinecap="round" />
+              <circle className="timeline-blank" cx={cx} cy={CY} r={R} strokeDasharray="4 5" strokeWidth="1.5" />
             )}
           </g>
         )
