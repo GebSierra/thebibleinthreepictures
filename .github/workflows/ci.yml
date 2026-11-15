@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Python tools
+        run: pip install pyyaml pytest
+      - name: Validate sessions
+        run: python3 tools/validate.py content/sessions.yaml
+      - name: Validate items
+        run: python3 tools/validate_items.py content/items.yaml content/sessions.yaml content/test-outs.md
+      - name: Banned words
+        run: python3 tools/lint_content.py
+      - name: Python tests
+        run: python3 -m pytest -q tests
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Content build (preview)
+        run: npm run content
+      - name: Type check
+        run: npm run typecheck
+      - name: Unit tests
+        run: npm test
+      - name: App build
+        run: npx vite build

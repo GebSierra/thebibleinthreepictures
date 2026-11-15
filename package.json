@@ -1,0 +1,34 @@
+{
+  "name": "thebibleinthreepictures",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "content": "node scripts/build-content.mjs",
+    "content:prod": "node scripts/build-content.mjs --production",
+    "dev": "npm run content && vite",
+    "build": "npm run content && tsc -b && vite build",
+    "build:prod": "npm run content:prod && tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "check:py": "python3 tools/validate.py content/sessions.yaml && python3 tools/validate_items.py content/items.yaml content/sessions.yaml content/test-outs.md && python3 tools/lint_content.py && python3 -m pytest -q tests"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "ts-fsrs": "6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0",
+    "yaml": "2.9.1"
+  }
+}

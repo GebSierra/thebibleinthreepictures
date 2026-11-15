@@ -1,0 +1,3752 @@
+sessions:
+- id: L1-01
+  level: 1
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: null
+  step_order: null
+  part: null
+  rail:
+    current: The World
+    recall: []
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: The World
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Genesis 3:15. God promises that the woman's offspring will bruise the serpent's head.
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 1:1-2:3
+    - Genesis 3
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 1:31
+      question: What did God see when he looked at all he had made?
+      answer: It was very good.
+      kind: observe
+    - ref: Genesis 3:15
+      question: What will the woman's offspring do to the serpent?
+      answer: Bruise his head.
+      kind: observe
+    - ref: Genesis 1 to 3
+      question: What changed between Genesis 1 and Genesis 3?
+      answer: A very good world was broken by sin, and man was sent out of the garden.
+      kind: understand
+    - ref: Genesis 3:15
+      question: Why is this promise good news, given right after the fall?
+      answer: God promises a rescuer before he sends them out.
+      kind: understand
+    - ref: Genesis 3:15
+      question: Who is the offspring who bruises the serpent's head? Where do you need him?
+      answer: Jesus. Answers vary.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T1.1
+  - T1.2
+  - T1.4
+  - T1.6
+- id: L1-02
+  level: 1
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: null
+  step_order: null
+  part: null
+  rail:
+    current: Egypt
+    recall:
+    - The World
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Egypt
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: God saves Israel first, then gives the law (Exodus 20:2). Salvation comes before obedience,
+      as in the gospel.
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 12:1-13
+    - Exodus 14:21-31
+    - Exodus 20:1-3
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 14:30
+      question: What did the LORD do for Israel that day?
+      answer: He saved Israel from the Egyptians.
+      kind: observe
+    - ref: Exodus 20:2
+      question: Before he gives the commands, what does God remind Israel he has done?
+      answer: Brought them out of Egypt, out of slavery.
+      kind: observe
+    - ref: Exodus 12:13
+      question: What protected the houses from judgment?
+      answer: The blood of the lamb.
+      kind: understand
+    - ref: Exodus 20:1-3
+      question: Why does God say what he has done before he gives the first command?
+      answer: Obedience answers rescue. It does not earn it.
+      kind: understand
+    - ref: Exodus 20:2
+      question: How is your salvation like Israel's? Who acted first?
+      answer: God saves first through Christ; we obey in response.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T1.1
+  - T1.2
+  - T1.5
+- id: L1-03
+  level: 1
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: null
+  step_order: null
+  part: null
+  rail:
+    current: The Land
+    recall:
+    - The World
+    - Egypt
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: The Land
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 2 Samuel 7:12-16
+    - 1 Kings 12:16-20
+    - 2 Kings 25:8-12
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 2 Samuel 7:16
+      question: How long will David's throne be established?
+      answer: Forever.
+      kind: observe
+    - ref: 2 Kings 25:9
+      question: What did the Babylonians burn in Jerusalem?
+      answer: The house of the LORD, the king's house, and all the houses.
+      kind: observe
+    - ref: 2 Samuel 7:16
+      question: What does God promise David?
+      answer: A house, a kingdom and a throne that last forever.
+      kind: understand
+    - ref: 2 Kings 25:9-11
+      question: What happened to the kingdom and the land in the end?
+      answer: Jerusalem was burned and the people went into exile.
+      kind: understand
+    - ref: 2 Samuel 7:16
+      question: If the land was lost, how could God's promise to David still stand?
+      answer: It points ahead to a king still to come.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T1.1
+  - T1.2
+- id: L1-04
+  level: 1
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: null
+  step_order: null
+  part: null
+  rail:
+    current: The Cross
+    recall:
+    - The World
+    - Egypt
+    - The Land
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: The Cross
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: The cross. The three pictures fall. The cross stands.
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 1 Corinthians 15:1-8
+    - 1 Timothy 1:15
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 1 Timothy 1:15
+      question: Why did Christ Jesus come into the world?
+      answer: To save sinners.
+      kind: observe
+    - ref: 1 Corinthians 15:3-4
+      question: What three things happened to Christ, in order?
+      answer: He died for our sins, was buried, and was raised on the third day.
+      kind: observe
+    - ref: 1 Corinthians 15:3
+      question: Why did Christ die, and what does 'according to the Scriptures' tell you?
+      answer: For our sins. It was promised in the Old Testament.
+      kind: understand
+    - ref: The four pictures
+      question: Why are the three pictures struck through, but not the cross?
+      answer: Each picture ended in failure. The cross is God's answer and does not fail.
+      kind: understand
+    - ref: 1 Timothy 1:15
+      question: Paul calls himself the foremost of sinners. What does that mean for you?
+      answer: Answers vary. No one is beyond Christ's saving.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T1.1
+  - T1.2
+  - T1.3
+  - T1.4
+  - T1.5
+  - T1.6
+- id: L2-01
+  level: 2
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Adam
+  step_order: 1
+  part: null
+  rail:
+    current: Adam
+    recall: []
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Adam
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 1:26-31
+    - Genesis 3:1-24
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 1:27
+      question: In whose image did God create man?
+      answer: His own image, the image of God.
+      kind: observe
+    - ref: Genesis 3:23
+      question: After they sinned, where did God send the man?
+      answer: Out of the garden of Eden.
+      kind: observe
+    - ref: Genesis 3:1-6
+      question: How did the serpent twist God's word?
+      answer: He questioned it and denied God's warning.
+      kind: understand
+    - ref: Genesis 1:26-28
+      question: What job did God give people?
+      answer: Be fruitful, fill the earth, subdue it and rule over it as his image.
+      kind: understand
+    - ref: Genesis 3:1-6
+      question: Where are you tempted to doubt God's word, as Eve did?
+      answer: Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+- id: L2-02
+  level: 2
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Ark
+  step_order: 2
+  part: null
+  rail:
+    current: Ark
+    recall:
+    - Adam
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Ark
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 6:5-22
+    - Genesis 8:20-9:17
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 6:8
+      question: Who found favor in the eyes of the LORD?
+      answer: Noah.
+      kind: observe
+    - ref: Genesis 9:13
+      question: What sign of the covenant did God set in the cloud?
+      answer: His bow, the rainbow.
+      kind: observe
+    - ref: Genesis 6:5-8
+      question: Why did God send the flood, and why was Noah spared?
+      answer: Man's heart was only evil; Noah found favor.
+      kind: understand
+    - ref: Genesis 8:20-22
+      question: What did Noah do first after the flood, and what did God promise?
+      answer: He built an altar; God would never again strike down every living creature.
+      kind: understand
+    - ref: Matthew 24:37-39
+      question: Jesus compares his coming to the days of Noah. What should that change in you?
+      answer: Answers vary. Be ready.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+- id: L2-03
+  level: 2
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Abraham
+  step_order: 3
+  part: null
+  rail:
+    current: Abraham
+    recall:
+    - Adam
+    - Ark
+  date: ~2000 BC
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Abraham
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Christ fulfills the Abrahamic covenant. He is the offspring through whom all nations are blessed
+      (Galatians 3:8, 16).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Abrahamic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 12:1-9
+    - Genesis 15:1-6
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 12:3
+      question: Who will be blessed in Abram?
+      answer: All the families of the earth.
+      kind: observe
+    - ref: Genesis 15:6
+      question: What did Abram do, and how did God count it?
+      answer: He believed the LORD; God counted it as righteousness.
+      kind: observe
+    - ref: Genesis 12:1-3
+      question: What did God ask Abram to leave, and what did he promise him?
+      answer: His country, kindred and father's house; a great nation, a great name, blessing.
+      kind: understand
+    - ref: Genesis 15:5
+      question: Why did God tell Abram to count the stars?
+      answer: His offspring would be as many.
+      kind: understand
+    - ref: Galatians 3:16
+      question: Who is Abraham's offspring, and how are the nations blessed through him?
+      answer: Christ. Through faith in him.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+  - T2.3
+  - T2.4
+  - T2.5
+- id: L2-04
+  level: 2
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Bondage
+  step_order: 4
+  part: null
+  rail:
+    current: Bondage
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Bondage
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 1:8-14
+    - Exodus 2:23-25
+    - Exodus 3:7-10
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 1:13-14
+      question: How did the Egyptians treat the people of Israel?
+      answer: They ruthlessly made them work as slaves.
+      kind: observe
+    - ref: Exodus 2:24
+      question: When God heard their groaning, what did he remember?
+      answer: His covenant with Abraham, Isaac and Jacob.
+      kind: observe
+    - ref: Exodus 1:9-10
+      question: Why did Pharaoh fear Israel?
+      answer: They were too many and too mighty.
+      kind: understand
+    - ref: Exodus 3:7-8
+      question: What has God seen, heard and come down to do?
+      answer: Seen their affliction, heard their cry, come down to deliver them.
+      kind: understand
+    - ref: Exodus 3:7
+      question: Where do you feel stuck? What does this verse say God sees?
+      answer: Answers vary. He sees and knows.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+- id: L2-05
+  level: 2
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Break Free
+  step_order: 5
+  part: null
+  rail:
+    current: Break Free
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+  date: ~1500 BC
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Break Free
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: 'At Sinai God gives the law. Christ fulfills the Mosaic covenant: he fulfills the Law (Matthew
+      5:17) and is our Passover lamb (1 Corinthians 5:7).'
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 12:1-13
+    - Exodus 14:10-31
+    - Exodus 19:1-6
+    - Exodus 20:1-17
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 12:13
+      question: What would the LORD do when he saw the blood?
+      answer: Pass over them.
+      kind: observe
+    - ref: Exodus 20:2
+      question: At Sinai, before he gives the commands, what does God say he has done?
+      answer: Brought them out of Egypt, out of slavery.
+      kind: observe
+    - ref: Exodus 14:13-14
+      question: Who fights for Israel at the sea?
+      answer: The LORD.
+      kind: understand
+    - ref: Exodus 19:5-6
+      question: At Sinai, what does God say Israel will be to him?
+      answer: His treasured possession, a kingdom of priests, a holy nation.
+      kind: understand
+    - ref: 1 Corinthians 5:7
+      question: How is Christ like the Passover lamb?
+      answer: His blood shields us from judgment.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+  - T2.3
+  - T2.6
+- id: L2-06
+  level: 2
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Battle
+  step_order: 6
+  part: null
+  rail:
+    current: Battle
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Battle
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Joshua 1:1-9
+    - Joshua 6:1-21
+    - Joshua 21:43-45
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Joshua 1:9
+      question: Why should Joshua not be afraid?
+      answer: The LORD his God is with him wherever he goes.
+      kind: observe
+    - ref: Joshua 21:45
+      question: How many of the LORD's good promises failed?
+      answer: Not one. All came to pass.
+      kind: observe
+    - ref: Joshua 6:20
+      question: How did the wall of Jericho fall?
+      answer: The people shouted, the trumpets blew, and the wall fell flat.
+      kind: understand
+    - ref: Joshua 2:11
+      question: Why did Rahab trust Israel's God?
+      answer: He is God in heaven above and on earth beneath.
+      kind: understand
+    - ref: Joshua 1:9
+      question: What are you facing that needs this promise?
+      answer: Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+- id: L2-07
+  level: 2
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Crowned
+  step_order: 7
+  part: null
+  rail:
+    current: Crowned
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+  date: ~1000 BC
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Crowned
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Christ fulfills the Davidic covenant. God gives him the throne of his father David, and his
+      kingdom has no end (Luke 1:32-33).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Davidic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 1 Samuel 16:1-13
+    - 2 Samuel 7:8-17
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 1 Samuel 16:7
+      question: Man looks on the outward appearance. What does the LORD look on?
+      answer: The heart.
+      kind: observe
+    - ref: 2 Samuel 7:13
+      question: How long will God establish the throne of David's offspring?
+      answer: Forever.
+      kind: observe
+    - ref: 1 Samuel 8:7
+      question: When Israel asked for a king, what were they really doing?
+      answer: Rejecting the LORD as their king.
+      kind: understand
+    - ref: 2 Samuel 7:12-14
+      question: What will David's son build, and what will God be to him?
+      answer: A house for God's name. A father.
+      kind: understand
+    - ref: Luke 1:32-33
+      question: How does Jesus fulfill God's promise to David?
+      answer: He receives David's throne and reigns forever.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+  - T2.3
+  - T2.4
+  - T2.7
+- id: L2-08
+  level: 2
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Cut
+  step_order: 8
+  part: null
+  rail:
+    current: Cut
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Cut
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 1 Kings 11:1-13
+    - 1 Kings 12:1-20
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 1 Kings 11:11
+      question: Why did God say he would tear the kingdom from Solomon?
+      answer: He had not kept God's covenant and statutes.
+      kind: observe
+    - ref: 1 Kings 12:20
+      question: Which tribe alone followed the house of David?
+      answer: Judah.
+      kind: observe
+    - ref: 1 Kings 11:4
+      question: Where did the split begin? Look at Solomon's heart.
+      answer: His wives turned his heart after other gods.
+      kind: understand
+    - ref: 1 Kings 12:28
+      question: What did Jeroboam set up, and why?
+      answer: Two golden calves, so the people would not go to Jerusalem.
+      kind: understand
+    - ref: 1 Kings 11:4
+      question: What turns your heart away from God? Name one 'golden calf.'
+      answer: Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+- id: L2-09
+  level: 2
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Captivity
+  step_order: 9
+  part: null
+  rail:
+    current: Captivity
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+  date: ~500 BC
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Captivity
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 2 Kings 17:5-18
+    - 2 Kings 25:1-12
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 2 Kings 17:7
+      question: Why was Israel carried away?
+      answer: They had sinned against the LORD and feared other gods.
+      kind: observe
+    - ref: 2 Kings 25:9-11
+      question: What happened to the temple and to the people of Jerusalem?
+      answer: The temple was burned and the people were carried into exile.
+      kind: observe
+    - ref: 2 Kings 17:13-14
+      question: How did God warn them, and how did they answer?
+      answer: By every prophet. They would not listen.
+      kind: understand
+    - ref: Deuteronomy 28:64
+      question: How did Moses warn about exile long before?
+      answer: The LORD would scatter them among all peoples.
+      kind: understand
+    - ref: Jeremiah 31:33-34
+      question: What hope does God give in exile?
+      answer: 'A new covenant: his law on their hearts and sins forgiven.'
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+  - T2.3
+- id: L2-10
+  level: 2
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Christ
+  step_order: 10
+  part: null
+  rail:
+    current: Christ
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+  date: ~0
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Christ
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Jesus is the Christ. At the Last Supper he calls the cup the new covenant in his blood (Luke
+      22:20), the covenant promised in Jeremiah 31:31-34.
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: New
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Luke 2:1-20
+    - Luke 22:14-20
+    - 1 Corinthians 15:1-8
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Luke 2:11
+      question: What three titles does the angel give the baby?
+      answer: Savior, Christ, Lord.
+      kind: observe
+    - ref: Luke 22:20
+      question: What does Jesus call the cup?
+      answer: The new covenant in his blood.
+      kind: observe
+    - ref: 1 Corinthians 15:3-4
+      question: What are the events 'of first importance'?
+      answer: Christ died for our sins, was buried and was raised.
+      kind: understand
+    - ref: Jeremiah 31:33-34
+      question: What is new about the new covenant?
+      answer: God's law on the heart and sin remembered no more.
+      kind: understand
+    - ref: Matthew 1:1
+      question: Jesus is called son of David and son of Abraham. Which promises does he keep?
+      answer: The promises to Abraham and to David.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+  - T2.3
+  - T2.4
+- id: L2-11
+  level: 2
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Church
+  step_order: 11
+  part: null
+  rail:
+    current: Church
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Church
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Acts 1:6-11
+    - Acts 2:1-47
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Acts 1:8
+      question: Where will the disciples be Christ's witnesses?
+      answer: Jerusalem, all Judea and Samaria, and to the end of the earth.
+      kind: observe
+    - ref: Acts 2:41
+      question: About how many were added that day?
+      answer: About three thousand.
+      kind: observe
+    - ref: Acts 2:38
+      question: What did Peter tell the crowd to do?
+      answer: Repent and be baptized in the name of Jesus Christ.
+      kind: understand
+    - ref: Acts 2:42
+      question: What did the first church devote itself to?
+      answer: The apostles' teaching, the fellowship, the breaking of bread, the prayers.
+      kind: understand
+    - ref: Acts 2:33
+      question: Who poured out the Holy Spirit?
+      answer: The risen, exalted Jesus.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.2
+- id: L2-12
+  level: 2
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Consummation
+  step_order: 12
+  part: null
+  rail:
+    current: Consummation
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+    - Church
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Consummation
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Revelation 21:1-7
+    - Revelation 22:1-5
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Revelation 21:4
+      question: What will God wipe away, and what will be no more?
+      answer: Every tear; death, mourning, crying and pain.
+      kind: observe
+    - ref: Revelation 22:3
+      question: What will no longer be there?
+      answer: The curse. (Compare Genesis 3.)
+      kind: observe
+    - ref: Revelation 21:3
+      question: What is the best part of the new creation?
+      answer: God himself dwells with his people.
+      kind: understand
+    - ref: Revelation 22:2
+      question: What comes back from Genesis?
+      answer: The tree of life.
+      kind: understand
+    - ref: Revelation 22:20
+      question: Jesus says he is coming soon. How do you answer him?
+      answer: Answers vary. 'Come, Lord Jesus.'
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T2.1
+  - T2.2
+- id: L3-01
+  level: 3
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Adam
+  step_order: 1
+  part: 1
+  rail:
+    current: Adam
+    recall: []
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Adam
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: All things were made through Christ (John 1:3; Colossians 1:16).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Adamic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 1
+    - Genesis 2
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 1:28
+      question: What did God tell the man and woman to do?
+      answer: Be fruitful, multiply, fill the earth, subdue it, have dominion.
+      kind: observe
+    - ref: Genesis 2:17
+      question: What did God say would happen if they ate from the tree?
+      answer: They would surely die.
+      kind: observe
+    - ref: Genesis 1:27
+      question: What does it mean that people are made in God's image?
+      answer: 'Answers vary: made to know God and reflect him.'
+      kind: understand
+    - ref: Genesis 2:15-16
+      question: What job and what gift did God give the man?
+      answer: To work and keep the garden; every tree but one to eat from.
+      kind: understand
+    - ref: John 1:3
+      question: What does this verse say about Christ and creation?
+      answer: All things were made through him.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.2
+  - T3.3
+  - T3.5
+- id: L3-02
+  level: 3
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Adam
+  step_order: 1
+  part: 2
+  rail:
+    current: Adam
+    recall: []
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Adam
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Christ is the last Adam. One man's disobedience made many sinners; one man's obedience makes
+      many righteous (Romans 5:18-19).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 3
+    - Romans 5:12-21
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 3:15
+      question: What will the woman's offspring do to the serpent?
+      answer: Bruise his head.
+      kind: observe
+    - ref: Romans 5:19
+      question: What did one man's disobedience do, and what will one man's obedience do?
+      answer: Made many sinners; will make many righteous.
+      kind: observe
+    - ref: Genesis 3:7-10
+      question: What did Adam and Eve do after they sinned?
+      answer: Covered themselves, hid from God and were afraid.
+      kind: understand
+    - ref: Genesis 3:21
+      question: What did God do for them before he sent them out?
+      answer: Made garments of skins and clothed them.
+      kind: understand
+    - ref: Romans 5:18
+      question: What does the one act of righteousness bring?
+      answer: Justification and life.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-03
+  level: 3
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Ark
+  step_order: 2
+  part: 1
+  rail:
+    current: Ark
+    recall:
+    - Adam
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Ark
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Jesus says his coming will be like the days of Noah (Matthew 24:37-39).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Noahic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 6
+    - Genesis 7
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 6:5
+      question: What did the LORD see about the thoughts of man's heart?
+      answer: Only evil continually.
+      kind: observe
+    - ref: Genesis 6:18
+      question: With whom will God establish his covenant?
+      answer: Noah.
+      kind: observe
+    - ref: Genesis 6:9
+      question: What three things are said about Noah?
+      answer: Righteous, blameless in his generation, walked with God.
+      kind: understand
+    - ref: Genesis 7:16
+      question: Who shut Noah in the ark?
+      answer: The LORD.
+      kind: understand
+    - ref: Matthew 24:37-39
+      question: How will Jesus' coming be like the flood?
+      answer: People will be unaware until it comes.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.2
+  - T3.3
+  - T3.5
+- id: L3-04
+  level: 3
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Ark
+  step_order: 2
+  part: 2
+  rail:
+    current: Ark
+    recall:
+    - Adam
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Ark
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Eight people were saved through water in the ark. Peter links this to baptism, which saves
+      through the resurrection of Jesus Christ (1 Peter 3:20-21).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 8:20-9:17
+    - 1 Peter 3:18-22
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 9:11
+      question: What does God promise will never happen again?
+      answer: All flesh cut off by a flood.
+      kind: observe
+    - ref: 1 Peter 3:18
+      question: Why did Christ suffer once for sins?
+      answer: To bring us to God.
+      kind: observe
+    - ref: Genesis 8:20
+      question: What did Noah do first?
+      answer: Built an altar and offered burnt offerings.
+      kind: understand
+    - ref: Genesis 9:12-13
+      question: What is the sign of the covenant, and who is it for?
+      answer: The bow in the cloud; every living creature, for all generations.
+      kind: understand
+    - ref: 1 Peter 3:20-21
+      question: What saves, according to Peter?
+      answer: Baptism, through the resurrection of Jesus Christ.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-05
+  level: 3
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Abraham
+  step_order: 3
+  part: 1
+  rail:
+    current: Abraham
+    recall:
+    - Adam
+    - Ark
+  date: 2100 BC
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Abraham
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: 'Paul says Scripture preached the gospel beforehand to Abraham: in you all nations will be
+      blessed (Galatians 3:8).'
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Abrahamic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 12
+    - Genesis 15
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 12:2
+      question: What does God promise to make of Abram?
+      answer: A great nation, a great name, a blessing.
+      kind: observe
+    - ref: Genesis 15:5
+      question: What does God tell Abram to count, and why?
+      answer: The stars; so shall his offspring be.
+      kind: observe
+    - ref: Genesis 12:4
+      question: How did Abram answer God's call?
+      answer: He went, as the LORD told him.
+      kind: understand
+    - ref: Genesis 15:6
+      question: How was Abram counted righteous?
+      answer: He believed the LORD.
+      kind: understand
+    - ref: Galatians 3:8
+      question: What gospel was preached to Abraham?
+      answer: In you all the nations shall be blessed.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.2
+  - T3.3
+  - T3.4
+  - T3.5
+- id: L3-06
+  level: 3
+  kind: lesson
+  stage_key: A
+  stage_label: Stage A
+  picture: The World
+  word: Abraham
+  step_order: 3
+  part: 2
+  rail:
+    current: Abraham
+    recall:
+    - Adam
+    - Ark
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Abraham
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: 'The promised offspring is one person: Christ (Galatians 3:16). On the mountain, the LORD will
+      provide (Genesis 22:14).'
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Genesis 17
+    - Genesis 22:1-19
+    - Galatians 3:7-16
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Genesis 22:8
+      question: What does Abraham say God will provide?
+      answer: The lamb for a burnt offering.
+      kind: observe
+    - ref: Galatians 3:16
+      question: Who is Abraham's offspring?
+      answer: Christ.
+      kind: observe
+    - ref: Genesis 17:5
+      question: What new name does God give Abram, and why?
+      answer: Abraham, father of a multitude of nations.
+      kind: understand
+    - ref: Genesis 22:14
+      question: What did Abraham call the place?
+      answer: The LORD will provide.
+      kind: understand
+    - ref: John 1:29
+      question: How is Genesis 22 a picture of the cross?
+      answer: 'God provides the lamb: Jesus, the Lamb of God.'
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-07
+  level: 3
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Bondage
+  step_order: 4
+  part: 1
+  rail:
+    current: Bondage
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Bondage
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: A deliverer is born under Pharaoh's death order (Exodus 1:22). Jesus is born under Herod's
+      (Matthew 2:13-16).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 1
+    - Exodus 2
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 1:7
+      question: What happened to the people of Israel in Egypt?
+      answer: They were fruitful and multiplied and filled the land.
+      kind: observe
+    - ref: Exodus 2:24
+      question: What did God remember when he heard their groaning?
+      answer: His covenant with Abraham, Isaac and Jacob.
+      kind: observe
+    - ref: Exodus 1:17
+      question: What did the midwives do, and why?
+      answer: They let the boys live, because they feared God.
+      kind: understand
+    - ref: Exodus 2:1-10
+      question: How was Moses saved as a baby?
+      answer: Hidden in a basket, found and raised by Pharaoh's daughter.
+      kind: understand
+    - ref: Matthew 2:13-16
+      question: How does Jesus' birth echo Moses' birth?
+      answer: A king tried to kill the boys; God protected the deliverer.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-08
+  level: 3
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Bondage
+  step_order: 4
+  part: 2
+  rail:
+    current: Bondage
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Bondage
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Jesus says he was sent to proclaim liberty to the captives (Luke 4:18).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 3
+    - Exodus 5
+    - Luke 4:16-21
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 3:14
+      question: What name does God give Moses?
+      answer: I AM WHO I AM.
+      kind: observe
+    - ref: Luke 4:18
+      question: Jesus was sent to proclaim liberty to whom?
+      answer: The captives.
+      kind: observe
+    - ref: Exodus 3:7-8
+      question: What has God seen, heard and come down to do?
+      answer: Seen their affliction, heard their cry, come down to deliver.
+      kind: understand
+    - ref: Exodus 5:2
+      question: What does Pharaoh ask about the LORD?
+      answer: Who is the LORD, that I should obey his voice?
+      kind: understand
+    - ref: Luke 4:18
+      question: How is Jesus a greater deliverer than Moses?
+      answer: He frees captives from sin, not only from Egypt.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-09
+  level: 3
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Break Free
+  step_order: 5
+  part: 1
+  rail:
+    current: Break Free
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+  date: 1446 BC (early date, 1 Kings 6:1)
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Break Free
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Christ, our Passover lamb, has been sacrificed (1 Corinthians 5:7).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 7-11 (skim)
+    - Exodus 12
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 12:5
+      question: What kind of lamb must each house choose?
+      answer: Without blemish, a male a year old.
+      kind: observe
+    - ref: Exodus 12:13
+      question: What does the LORD do when he sees the blood?
+      answer: Passes over.
+      kind: observe
+    - ref: Exodus 12:12-13
+      question: What would happen to Egypt's firstborn, and to houses with the blood?
+      answer: Struck down; passed over.
+      kind: understand
+    - ref: Exodus 12:26-27
+      question: What were parents to tell their children?
+      answer: It is the sacrifice of the LORD's Passover.
+      kind: understand
+    - ref: 1 Corinthians 5:7
+      question: Who is our Passover lamb?
+      answer: Christ.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.4
+  - T3.5
+- id: L3-10
+  level: 3
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Break Free
+  step_order: 5
+  part: 2
+  rail:
+    current: Break Free
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Break Free
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: God saves first, then gives the law (Exodus 20:2). Jesus came not to abolish the Law but to
+      fulfill it (Matthew 5:17).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Mosaic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Exodus 14
+    - Exodus 19:1-6
+    - Exodus 20:1-17
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Exodus 19:5-6
+      question: What will Israel be if they keep God's covenant?
+      answer: His treasured possession, a kingdom of priests, a holy nation.
+      kind: observe
+    - ref: Exodus 20:2
+      question: What does God say he has done before he gives the commands?
+      answer: Brought them out of Egypt, out of slavery.
+      kind: observe
+    - ref: Exodus 14:31
+      question: What did Israel see, and how did they respond?
+      answer: The LORD's great power; they feared and believed.
+      kind: understand
+    - ref: Exodus 20:3
+      question: What is the first command, and why does it come first?
+      answer: No other gods before me. Everything flows from loving God alone.
+      kind: understand
+    - ref: Matthew 5:17
+      question: What did Jesus come to do with the Law?
+      answer: Fulfill it.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.2
+  - T3.3
+  - T3.5
+- id: L3-11
+  level: 3
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Battle
+  step_order: 6
+  part: 1
+  rail:
+    current: Battle
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Battle
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Rahab, who trusted Israel's God, is in Jesus' family line (Matthew 1:5).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Joshua 1
+    - Joshua 2
+    - Joshua 6
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Joshua 1:9
+      question: Why should Joshua be strong and courageous?
+      answer: The LORD his God is with him wherever he goes.
+      kind: observe
+    - ref: Joshua 2:11
+      question: What does Rahab confess about the LORD?
+      answer: He is God in the heavens above and on the earth beneath.
+      kind: observe
+    - ref: Joshua 1:8
+      question: What should Joshua do with the Book of the Law?
+      answer: Meditate on it day and night and do it.
+      kind: understand
+    - ref: Joshua 6:20
+      question: What made the wall fall?
+      answer: The LORD, at the shout and the trumpets.
+      kind: understand
+    - ref: Matthew 1:5
+      question: Rahab is in Jesus' family line. What does that say about grace?
+      answer: God brings outsiders in by faith.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-12
+  level: 3
+  kind: lesson
+  stage_key: B
+  stage_label: Stage B
+  picture: Egypt
+  word: Battle
+  step_order: 6
+  part: 2
+  rail:
+    current: Battle
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Battle
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Joshua did not give the final rest (Hebrews 4:8-10). The judges saved for a time, then the
+      people fell again. They need a better savior and king.
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Joshua 21:43-45
+    - Joshua 24:14-28
+    - Judges 2:6-19
+    - Judges 21:25
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Joshua 24:15
+      question: What does Joshua choose for himself and his house?
+      answer: To serve the LORD.
+      kind: observe
+    - ref: Judges 2:16
+      question: What did the LORD raise up to save them?
+      answer: Judges.
+      kind: observe
+    - ref: Joshua 21:45
+      question: How many of God's good promises failed?
+      answer: Not one.
+      kind: understand
+    - ref: Judges 2:10-12
+      question: What happened after Joshua's generation died?
+      answer: A generation rose that did not know the LORD and served the Baals.
+      kind: understand
+    - ref: Hebrews 4:8-10
+      question: What rest did Joshua not give, and who gives it?
+      answer: God's Sabbath rest, given in Christ.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-13
+  level: 3
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Crowned
+  step_order: 7
+  part: 1
+  rail:
+    current: Crowned
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+  date: 1010 BC (David begins to reign)
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Crowned
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: David is anointed in Bethlehem. The ruler who shepherds God's people comes from Bethlehem (Micah
+      5:2; Matthew 2:6).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 1 Samuel 8
+    - 1 Samuel 16
+    - 2 Samuel 5:1-5
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 1 Samuel 8:7
+      question: When the people asked for a king, whom did they reject?
+      answer: The LORD, from being king over them.
+      kind: observe
+    - ref: 1 Samuel 16:7
+      question: What does the LORD look on?
+      answer: The heart.
+      kind: observe
+    - ref: 1 Samuel 8:19-20
+      question: Why did Israel want a king?
+      answer: To be like the nations and have a king fight their battles.
+      kind: understand
+    - ref: 1 Samuel 16:13
+      question: What came upon David when he was anointed?
+      answer: The Spirit of the LORD.
+      kind: understand
+    - ref: Micah 5:2
+      question: Who will come from Bethlehem?
+      answer: A ruler in Israel from of old.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.4
+  - T3.5
+- id: L3-14
+  level: 3
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Crowned
+  step_order: 7
+  part: 2
+  rail:
+    current: Crowned
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Crowned
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: God promises David a son whose throne lasts forever (2 Samuel 7:13). Jesus receives the throne
+      of his father David (Luke 1:32-33).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: Davidic
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 2 Samuel 7
+    - Psalm 2
+    - Luke 1:26-33
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 2 Samuel 7:12-13
+      question: What does God promise about David's offspring?
+      answer: God will establish his kingdom and his throne forever.
+      kind: observe
+    - ref: Luke 1:33
+      question: How long will Jesus reign, and how long will his kingdom last?
+      answer: Forever; it will have no end.
+      kind: observe
+    - ref: 2 Samuel 7:16
+      question: What three things will last forever?
+      answer: David's house, kingdom and throne.
+      kind: understand
+    - ref: Psalm 2:7
+      question: What does the LORD call his king?
+      answer: My Son.
+      kind: understand
+    - ref: Luke 1:32-33
+      question: Whose throne will Jesus receive?
+      answer: His father David's.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.2
+  - T3.3
+  - T3.5
+- id: L3-15
+  level: 3
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Cut
+  step_order: 8
+  part: 1
+  rail:
+    current: Cut
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Cut
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: The kingdom splits because the king's heart turned away. Christ was tempted in every way, yet
+      without sin (Hebrews 4:15).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 1 Kings 11
+    - 1 Kings 12
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 1 Kings 11:4
+      question: What happened to Solomon's heart when he was old?
+      answer: His wives turned it away after other gods.
+      kind: observe
+    - ref: 1 Kings 12:28
+      question: What did Jeroboam make, and what did he tell the people?
+      answer: Two golden calves; 'Behold your gods.'
+      kind: observe
+    - ref: 1 Kings 11:11
+      question: Why did God tear the kingdom away?
+      answer: Solomon did not keep his covenant and statutes.
+      kind: understand
+    - ref: 1 Kings 12:13-14
+      question: How did Rehoboam answer the people?
+      answer: Harshly. He made their yoke heavier.
+      kind: understand
+    - ref: Hebrews 4:15
+      question: How is Jesus unlike Solomon?
+      answer: Tempted in every way, yet without sin.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-16
+  level: 3
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Cut
+  step_order: 8
+  part: 2
+  rail:
+    current: Cut
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Cut
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: God promises one nation under one king and one shepherd, his servant David (Ezekiel 37:22-24).
+      Jesus is the good shepherd of one flock (John 10:16).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 1 Kings 18
+    - Ezekiel 37:15-28
+    - John 10:11-16
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 1 Kings 18:39
+      question: What did the people say when the fire fell?
+      answer: The LORD, he is God.
+      kind: observe
+    - ref: Ezekiel 37:22
+      question: How many kings and kingdoms will there be?
+      answer: One king; no longer two kingdoms.
+      kind: observe
+    - ref: 1 Kings 18:21
+      question: What did Elijah ask the people?
+      answer: How long will you limp between two opinions?
+      kind: understand
+    - ref: Ezekiel 37:22
+      question: What does God promise the divided people?
+      answer: One nation and one king.
+      kind: understand
+    - ref: John 10:16
+      question: How many flocks and shepherds will there be?
+      answer: One flock, one shepherd.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-17
+  level: 3
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Captivity
+  step_order: 9
+  part: 1
+  rail:
+    current: Captivity
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+  date: 722 BC (Israel to Assyria); 586 BC (Judah to Babylon)
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Captivity
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Exile is the curse the covenant warned of (Deuteronomy 28:64). Christ redeemed us from the
+      curse by becoming a curse for us (Galatians 3:13).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - 2 Kings 17
+    - 2 Kings 25
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: 2 Kings 17:7
+      question: Why did this happen to Israel?
+      answer: They sinned against the LORD and feared other gods.
+      kind: observe
+    - ref: 2 Kings 25:9
+      question: What did the Babylonians burn?
+      answer: The house of the LORD, the king's house, and all the houses of Jerusalem.
+      kind: observe
+    - ref: 2 Kings 17:13-14
+      question: How did God warn them, and how did they answer?
+      answer: By the prophets. They would not listen.
+      kind: understand
+    - ref: 2 Kings 25:9-11
+      question: What did Judah lose?
+      answer: The temple, the city and the land.
+      kind: understand
+    - ref: Galatians 3:13
+      question: How did Christ deal with the curse?
+      answer: He became a curse for us.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.4
+  - T3.5
+- id: L3-18
+  level: 3
+  kind: lesson
+  stage_key: C1
+  stage_label: Stage C
+  picture: The Land
+  word: Captivity
+  step_order: 9
+  part: 2
+  rail:
+    current: Captivity
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Captivity
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: In exile God promises a new covenant (Jeremiah 31:31-34). Hebrews says Jesus brings it (Hebrews
+      8:8).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Jeremiah 31:31-34
+    - Ezekiel 36:24-28
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Jeremiah 31:33
+      question: Where will God write his law in the new covenant?
+      answer: On their hearts.
+      kind: observe
+    - ref: Jeremiah 31:34
+      question: What will God remember no more?
+      answer: Their sin.
+      kind: observe
+    - ref: Jeremiah 31:31-32
+      question: How is the new covenant different from the old?
+      answer: Not like the covenant they broke.
+      kind: understand
+    - ref: Ezekiel 36:26
+      question: What will God give his people?
+      answer: A new heart and a new spirit.
+      kind: understand
+    - ref: Hebrews 8:8
+      question: Who brings the new covenant?
+      answer: God, through Jesus.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.3
+  - T3.5
+- id: L3-19
+  level: 3
+  kind: review
+  stage_key: null
+  stage_label: null
+  picture: null
+  word: null
+  step_order: null
+  part: null
+  rail:
+    current: null
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: 'Review: Adam to Captivity'
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  find_it:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for: &id001
+  - T3.1
+  - T3.2
+  - T3.3
+  - T3.4
+  - T3.5
+- id: L3-20
+  level: 3
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Christ
+  step_order: 10
+  part: 1
+  rail:
+    current: Christ
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+  date: ~5 BC (birth)
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Christ
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: Matthew opens by calling Jesus the son of David, the son of Abraham (Matthew 1:1). Two covenants
+      meet in him.
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Matthew 1:1-17
+    - Luke 2:1-20
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Matthew 1:1
+      question: Whose son is Jesus called?
+      answer: The son of David, the son of Abraham.
+      kind: observe
+    - ref: Luke 2:11
+      question: What three titles does the angel give the baby?
+      answer: Savior, Christ, Lord.
+      kind: observe
+    - ref: Matthew 1:1
+      question: Why does Matthew name David and Abraham first?
+      answer: Jesus keeps the promises made to both.
+      kind: understand
+    - ref: Luke 2:10-11
+      question: What is the good news, and who is it for?
+      answer: A Savior is born. Great joy for all the people.
+      kind: understand
+    - ref: Luke 2:11
+      question: Which Old Testament promise do you see kept in Jesus' birth?
+      answer: Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.4
+  - T3.5
+- id: L3-21
+  level: 3
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Christ
+  step_order: 10
+  part: 2
+  rail:
+    current: Christ
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Christ
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: The cup is the new covenant in his blood (Luke 22:20). He died for our sins, was buried, and
+      was raised (1 Corinthians 15:3-4).
+  covenant:
+    owner: AI DRAFT
+    status: draft
+    value: New
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Luke 22:14-20
+    - Mark 15
+    - 1 Corinthians 15:1-8
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Luke 22:20
+      question: What does Jesus call the cup?
+      answer: The new covenant in his blood.
+      kind: observe
+    - ref: Mark 15:38
+      question: What happened to the temple curtain when Jesus died?
+      answer: It was torn in two, from top to bottom.
+      kind: observe
+    - ref: Mark 15:38
+      question: What does the torn curtain show?
+      answer: The way to God is open.
+      kind: understand
+    - ref: 1 Corinthians 15:3-4
+      question: What happened on the third day?
+      answer: He was raised.
+      kind: understand
+    - ref: Luke 22:20
+      question: What does the new covenant in his blood mean for you?
+      answer: Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.2
+  - T3.3
+  - T3.5
+- id: L3-22
+  level: 3
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Church
+  step_order: 11
+  part: 1
+  rail:
+    current: Church
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Church
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: The risen and exalted Christ pours out the promised Holy Spirit (Acts 2:33).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Acts 1
+    - Acts 2
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Acts 1:8
+      question: Where will the disciples be witnesses?
+      answer: Jerusalem, Judea and Samaria, the end of the earth.
+      kind: observe
+    - ref: Acts 2:38
+      question: What does Peter tell the crowd to do?
+      answer: Repent and be baptized in the name of Jesus Christ.
+      kind: observe
+    - ref: Acts 1:8
+      question: Where will the gospel go?
+      answer: Jerusalem, Judea and Samaria, the end of the earth.
+      kind: understand
+    - ref: Acts 2:42
+      question: What did the new believers devote themselves to?
+      answer: Teaching, fellowship, breaking bread, prayer.
+      kind: understand
+    - ref: Acts 2:33
+      question: Who poured out the Spirit?
+      answer: The exalted Jesus.
+      kind: christ
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-23
+  level: 3
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Church
+  step_order: 11
+  part: 2
+  rail:
+    current: Church
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Church
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: In Christ, Jew and Gentile become one new man, and the blessing promised to Abraham reaches
+      the nations (Ephesians 2:13-16).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Ephesians 2:11-22
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Ephesians 2:13
+      question: What brought those who were far away near?
+      answer: The blood of Christ.
+      kind: observe
+    - ref: Ephesians 2:20
+      question: Who is the cornerstone?
+      answer: Christ Jesus himself.
+      kind: observe
+    - ref: Ephesians 2:14
+      question: What did Christ tear down?
+      answer: The dividing wall of hostility.
+      kind: understand
+    - ref: Ephesians 2:19-20
+      question: What are believers now?
+      answer: Fellow citizens and members of God's household.
+      kind: understand
+    - ref: Ephesians 2:13
+      question: Were you far off or near? What brought you near?
+      answer: The blood of Christ. Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-24
+  level: 3
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Consummation
+  step_order: 12
+  part: 1
+  rail:
+    current: Consummation
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+    - Church
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Consummation
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: The rider on the white horse is called Faithful and True, King of kings and Lord of lords (Revelation
+      19:11, 16).
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Revelation 19:11-16
+    - Revelation 21:1-8
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Revelation 19:16
+      question: What name is written on his robe?
+      answer: King of kings and Lord of lords.
+      kind: observe
+    - ref: Revelation 21:3
+      question: Where is the dwelling place of God?
+      answer: With man.
+      kind: observe
+    - ref: Revelation 19:11
+      question: What is the rider called?
+      answer: Faithful and True.
+      kind: understand
+    - ref: Revelation 21:4
+      question: What will be no more?
+      answer: Death, mourning, crying and pain.
+      kind: understand
+    - ref: Revelation 21:3
+      question: What will it mean to live with God?
+      answer: Answers vary.
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-25
+  level: 3
+  kind: lesson
+  stage_key: C2
+  stage_label: Stage C
+  picture: The Cross
+  word: Consummation
+  step_order: 12
+  part: 2
+  rail:
+    current: Consummation
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+    - Church
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Consummation
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: draft
+    value: The Lamb is the temple and the lamp of the city (Revelation 21:22-23). What was lost in Genesis
+      3 is restored.
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - Revelation 21:9-27
+    - Revelation 22:1-5
+    - Revelation 22:20
+  find_it:
+    owner: AI DRAFT
+    status: draft
+    value:
+    - ref: Revelation 22:2
+      question: What grows by the river, and what are its leaves for?
+      answer: The tree of life; the healing of the nations.
+      kind: observe
+    - ref: Revelation 22:20
+      question: What does Jesus promise?
+      answer: He is coming soon.
+      kind: observe
+    - ref: Revelation 21:22-23
+      question: Why is there no temple and no sun?
+      answer: God and the Lamb are its temple and its light.
+      kind: understand
+    - ref: Revelation 22:3
+      question: What is gone, and what does that undo from Genesis 3?
+      answer: The curse.
+      kind: understand
+    - ref: Revelation 22:20
+      question: How do you answer Jesus' promise?
+      answer: Answers vary. 'Come, Lord Jesus.'
+      kind: apply
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for:
+  - T3.5
+- id: L3-26
+  level: 3
+  kind: review
+  stage_key: null
+  stage_label: null
+  picture: null
+  word: null
+  step_order: null
+  part: null
+  rail:
+    current: null
+    recall:
+    - Adam
+    - Ark
+    - Abraham
+    - Bondage
+    - Break Free
+    - Battle
+    - Crowned
+    - Cut
+    - Captivity
+    - Christ
+    - Church
+    - Consummation
+  date: null
+  title:
+    owner: MECHANICAL
+    status: draft
+    value: Final review
+  key_event:
+    owner: MINE
+    status: empty
+    value: null
+  christ_point:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  covenant:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  read:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  find_it:
+    owner: AI DRAFT
+    status: empty
+    value: null
+  one_line:
+    owner: MINE
+    status: empty
+    value: null
+  teaching_note:
+    owner: MINE
+    status: empty
+    value: null
+  go_further:
+    owner: MINE
+    status: empty
+    value: null
+  image:
+    owner: MINE
+    status: empty
+    description: null
+    source: null
+    license: null
+  leader_note:
+    owner: MINE
+    status: empty
+    value: null
+  prepares_for: *id001

@@ -1,0 +1,176 @@
+# Level 1 check items for the app. Home: this repo (app only for now).
+# Every item prepares for one test-out item (test_out) in content/test-outs.md.
+# use: where the item may appear. "choice" items are for lessons only.
+# A slot with "from" takes its value from content/sessions.yaml.
+# Status: AI DRAFT unless marked otherwise. Geb approves each item.
+items:
+
+# ---------- L1-01 The World ----------
+- id: I1-first-picture
+  level: 1
+  sessions: [L1-01]
+  test_out: T1.1
+  type: choice
+  use: [lesson]
+  options: [The World, Egypt, The Land, The Cross]
+  prompt: {owner: AI DRAFT, status: draft, value: "Which picture comes first?"}
+  answer: {owner: AI DRAFT, status: draft, value: "The World"}
+
+- id: I1-promise-chapter
+  level: 1
+  sessions: [L1-01]
+  test_out: T1.4
+  type: type_word
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "Where is Christ first promised? Name the book and chapter."}
+  answer: {owner: AI DRAFT, status: draft, value: "Genesis 3"}
+  accept:
+    owner: AI DRAFT
+    status: draft
+    value: [genesis 3, gen 3, gen. 3, genesis three, genesis 3:15, gen 3:15, gen. 3:15]
+
+- id: I1-promise-words
+  level: 1
+  sessions: [L1-01]
+  test_out: T1.4
+  type: self_check
+  use: [lesson, review]
+  prompt: {owner: AI DRAFT, status: draft, value: "In Genesis 3:15, what does God promise about the woman's offspring?"}
+  answer: {owner: AI DRAFT, status: draft, value: "He will bruise the serpent's head."}
+
+- id: I1-key-event-world
+  level: 1
+  sessions: [L1-01]
+  test_out: T1.2
+  type: self_check
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "The World: what is its one key event?"}
+  answer: {owner: MINE, status: empty, from: L1-01.key_event}
+
+# ---------- L1-02 Egypt ----------
+- id: I1-second-picture
+  level: 1
+  sessions: [L1-02]
+  test_out: T1.1
+  type: choice
+  use: [lesson]
+  options: [The World, Egypt, The Land, The Cross]
+  prompt: {owner: AI DRAFT, status: draft, value: "Which picture comes after The World?"}
+  answer: {owner: AI DRAFT, status: draft, value: "Egypt"}
+
+- id: I1-exodus-gospel
+  level: 1
+  sessions: [L1-02]
+  test_out: T1.5
+  type: self_check
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "How is the Exodus a picture of the gospel? Say it in one line."}
+  answer: {owner: AI DRAFT, status: draft, value: "God saves first, then gives the law."}
+
+- id: I1-exodus-order
+  level: 1
+  sessions: [L1-02]
+  test_out: T1.5
+  type: type_word
+  use: [lesson, review]
+  prompt: {owner: AI DRAFT, status: draft, value: "Fill the gap: God saves his people first, then gives the ____."}
+  answer: {owner: AI DRAFT, status: draft, value: "law"}
+  accept: {owner: AI DRAFT, status: draft, value: [law, the law, his law, ten commandments, the ten commandments, commandments, commands]}
+
+- id: I1-key-event-egypt
+  level: 1
+  sessions: [L1-02]
+  test_out: T1.2
+  type: self_check
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "Egypt: what is its one key event?"}
+  answer: {owner: MINE, status: empty, from: L1-02.key_event}
+
+# ---------- L1-03 The Land ----------
+- id: I1-third-picture
+  level: 1
+  sessions: [L1-03]
+  test_out: T1.1
+  type: choice
+  use: [lesson]
+  options: [The World, Egypt, The Land, The Cross]
+  prompt: {owner: AI DRAFT, status: draft, value: "Which picture comes third?"}
+  answer: {owner: AI DRAFT, status: draft, value: "The Land"}
+
+- id: I1-before-land
+  level: 1
+  sessions: [L1-03]
+  test_out: T1.1
+  type: type_word
+  use: [lesson, review]
+  prompt: {owner: AI DRAFT, status: draft, value: "Which picture comes just before The Land?"}
+  answer: {owner: AI DRAFT, status: draft, value: "Egypt"}
+  accept: {owner: AI DRAFT, status: draft, value: [egypt]}
+
+- id: I1-key-event-land
+  level: 1
+  sessions: [L1-03]
+  test_out: T1.2
+  type: self_check
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "The Land: what is its one key event?"}
+  answer: {owner: MINE, status: empty, from: L1-03.key_event}
+
+# ---------- L1-04 The Cross ----------
+- id: I1-order-pictures
+  level: 1
+  sessions: [L1-04]
+  test_out: T1.1
+  type: order
+  use: [lesson, review, test_out]
+  points: 4
+  prompt: {owner: AI DRAFT, status: draft, value: "Put the pictures on the timeline in order."}
+  answer: {owner: MECHANICAL, status: approved, value: [The World, Egypt, The Land, The Cross]}
+
+- id: I1-strike
+  level: 1
+  sessions: [L1-04]
+  test_out: T1.3
+  type: strike
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "Tap each picture that gets struck through."}
+  answer: {owner: MECHANICAL, status: approved, value: [The World, Egypt, The Land]}
+
+- id: I1-strike-why
+  level: 1
+  sessions: [L1-04]
+  test_out: T1.3
+  type: self_check
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "Why are three pictures struck through, but not the cross? One line."}
+  answer: {owner: AI DRAFT, status: draft, value: "Each picture ended in failure. The cross is God's answer and does not fail."}
+
+- id: I1-key-event-cross
+  level: 1
+  sessions: [L1-04]
+  test_out: T1.2
+  type: self_check
+  use: [lesson, review, test_out]
+  points: 1
+  prompt: {owner: AI DRAFT, status: draft, value: "The Cross: what is its one key event?"}
+  answer: {owner: MINE, status: empty, from: L1-04.key_event}
+
+- id: I1-tell-story
+  level: 1
+  sessions: [L1-04]
+  test_out: T1.6
+  type: speak_timed
+  use: [lesson, review, test_out]
+  points: 2
+  seconds: 60
+  checks:
+  - The three pictures and the cross, in order, each with its key event
+  - Finished inside 60 seconds
+  prompt: {owner: AI DRAFT, status: draft, value: "Tell the whole story out loud in 60 seconds. Tell a friend if you can."}
