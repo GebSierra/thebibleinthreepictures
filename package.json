@@ -14,14 +14,18 @@
     "build:prod": "npm run content:prod && tsc -b && vite build",
     "typecheck": "tsc -b",
     "test": "vitest run",
+    "e2e": "playwright test",
     "check:py": "python3 tools/validate.py content/sessions.yaml && python3 tools/validate_items.py content/items.yaml content/sessions.yaml content/test-outs.md && python3 tools/lint_content.py && python3 -m pytest -q tests"
   },
   "dependencies": {
+    "@fontsource/archivo": "5.3.0",
+    "@fontsource/figtree": "5.3.0",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "ts-fsrs": "6.0.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
     "@playwright/test": "1.65.1",
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",

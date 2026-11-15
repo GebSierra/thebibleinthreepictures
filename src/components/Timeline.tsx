@@ -6,6 +6,7 @@
  * the drawn globe, the pyramids, his Israel outline, and the glowing cross.
  * Colors come from CSS variables set by tokens.css.
  */
+import { useId } from 'react'
 import { GLOBE_LAND, ISRAEL_PATH } from '../lib/art.ts'
 import { PICTURES, type PictureName } from '../lib/pictures.ts'
 
@@ -27,16 +28,17 @@ const CY = 48
 const S = R / 140 // the film draws discs at radius 140
 const LINE_Y = 104
 
-function Art({ name }: { name: PictureName }) {
+export function Art({ name }: { name: PictureName }) {
+  const clip = `globe-${useId().replace(/:/g, '')}`
   switch (name) {
     case 'The World':
       return (
         <g>
           <circle r="140" className="disc-fill" />
-          <clipPath id="tl-globe">
+          <clipPath id={clip}>
             <circle r="88" />
           </clipPath>
-          <g clipPath="url(#tl-globe)">
+          <g clipPath={`url(#${clip})`}>
             <path d={GLOBE_LAND} className="art-ink" opacity="0.85" />
           </g>
           <circle r="88" className="art-line" strokeWidth="5" />
@@ -110,6 +112,19 @@ export function Timeline({ shown, struck = [], current, className }: TimelinePro
           </g>
         )
       })}
+    </svg>
+  )
+}
+
+/** One picture on its own, for buttons and cards. Decorative: label the control that holds it. */
+export function PictureDisc({ name, size = 44, struck = false }: { name: PictureName; size?: number; struck?: boolean }) {
+  const key = PICTURES.find((p) => p.name === name)!.key
+  return (
+    <svg className={`picture-disc stage-${key}`} width={size} height={size} viewBox="-150 -150 300 300" aria-hidden="true">
+      <g opacity={struck ? 0.45 : 1}>
+        <Art name={name} />
+      </g>
+      {struck && name !== 'The Cross' && <line className="timeline-strike" x1="-128" y1="-136" x2="128" y2="136" strokeWidth="14" strokeLinecap="round" />}
     </svg>
   )
 }

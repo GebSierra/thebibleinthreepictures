@@ -1,20 +1,37 @@
 /*
- * Placeholder tokens. Task T2.2 replaces this file with the design Geb picks.
- * Colors are the 60-second film's. Stage B is the film's grey mix of cream and ground.
+ * Design tokens (plan task T2.2), from Home A "The Line" on the design canvas,
+ * picked by Geb on 2026-11-15. Colors are the 60-second film's.
+ * src/styles/tokens.test.ts checks text contrast against WCAG AA.
  */
 :root {
-  /* From Geb's 60-second film: ground, gold, cream, sky. */
+  /* Ground and surfaces */
   --bg: #0d1626;
+  --bg-glow: #1a2a4a;
   --surface: #16223a;
+  --line: #2c3a5c;
+
+  /* Text */
   --ink: #f3f1ea;
   --ink-muted: #b9bfd3;
-  --line: #3a4670;
+  --on-gold: #0d1626;
+
+  /* Accents */
+  --gold: #ffd23f;
+  --sky: #9fe3f0;
+  --strike: #ff7a59;
+
+  /* Stages: A gold, B grey, C (The Land) sky, C (The Cross) cream */
   --stage-A: #ffd23f;
   --stage-B: #8f939b;
   --stage-C1: #9fe3f0;
   --stage-C2: #f3f1ea;
-  --strike: #e2574c;
+
+  /* Type */
   --font-head: 'Archivo', system-ui, sans-serif;
   --font-body: 'Figtree', system-ui, sans-serif;
+
+  /* Shape */
   --radius: 14px;
+  --radius-card: 20px;
+  --tap: 52px;
 }
