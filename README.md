@@ -15,6 +15,8 @@ Geb Sierra's course as an installable web app. This repo builds **Level 1 only**
 | `scripts/build-content.ts` | Runs the checks, then writes `src/content/level1.json`. `--production` keeps approved content only. |
 | `src/lib/` | Timeline data, storage, review schedule, graders, test-out scoring, share text. Each has tests. |
 | `src/components/Timeline.tsx` | The timeline. The three pictures can be struck. The cross never is. |
+| `src/screens/` | Learn, Lesson, Review, Me, Test-out. Bottom bar: Learn, Review, Me. |
+| `e2e/` | Playwright: lesson, review, the whole of Level 1 through a passing test-out, and axe. |
 | `docs/stack.md` | Tools, versions, prices, ESV terms, phone storage rules, with sources and dates. |
 | `docs/reference-check-L1.md` | Level 1 verses checked against the ESV. |
 
@@ -32,6 +34,7 @@ Needs Node 26 (see `.nvmrc`) and Python 3 with `pyyaml` and `pytest`.
 npm ci
 npm run check:py     # validators, lint, Python tests
 npm test             # unit tests
+npm run e2e          # click-through and accessibility tests (Playwright)
 npm run dev          # preview build on your machine
 npm run build:prod   # fails until every Level 1 slot it needs is approved
 ```

@@ -37,3 +37,7 @@ jobs:
         run: npm test
       - name: App build
         run: npx vite build
+      - name: Browser for click-through tests
+        run: npx playwright install --with-deps chromium
+      - name: Click-through and accessibility tests
+        run: npx playwright test

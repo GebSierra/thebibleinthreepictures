@@ -13,4 +13,4 @@ Read the plan first: `claude/webapp-handoff-plan.md` in the claude.ai project, t
 - **No new libraries** beyond the plan's section 7 without Geb agreeing.
 - **Spend nothing.** Check any price with Geb first. Never state a price, version or date from memory.
 - **Only `src/lib/schedule.ts` imports ts-fsrs. Only `src/lib/storage.ts` touches browser storage.**
-- Before you push: `npm run check:py && npm test && npm run typecheck`.
+- Before you push: `npm run check:py && npm test && npm run typecheck && npm run e2e`.
