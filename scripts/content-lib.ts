@@ -4,7 +4,7 @@
  * Pure functions: the CLI in build-content.ts does the file and process work.
  */
 import { parse } from 'yaml'
-import type { Item, LevelContent, Lesson, Slot, TestOutPart } from '../src/lib/types.ts'
+import type { Item, LevelContent, Lesson, Slot, StoryStage, TestOutPart } from '../src/lib/types.ts'
 
 type Mode = 'preview' | 'production'
 type RawSlot = { owner: string; status: string; value?: unknown; from?: string }
@@ -99,6 +99,28 @@ function buildLesson(s: RawSession, items: Item[], mode: Mode): Lesson {
   }
 }
 
+/**
+ * The whole story for the explorer: four stages, each with its three words and any
+ * approximate date, from the Level 2 sessions. Structure only (word, stage, date):
+ * no key events, Christ points or questions, so the lessons keep their content.
+ */
+export function buildStory(sessionsList: RawSession[]): StoryStage[] {
+  const l2 = sessionsList.filter((s) => s.level === 2 && s.kind === 'lesson').sort((a, b) => a.step_order - b.step_order)
+  const stages: StoryStage[] = []
+  for (const s of l2) {
+    let st = stages.find((x) => x.key === s.stage_key)
+    if (!st) {
+      st = { key: s.stage_key, picture: s.picture, label: s.stage_label, words: [] }
+      stages.push(st)
+    }
+    st.words.push({ word: s.word, date: typeof s.date === 'string' ? s.date : null })
+  }
+  if (stages.length !== 4 || stages.some((st) => st.words.length !== 3)) {
+    throw new ContentError('the story needs four stages of three words each')
+  }
+  return stages
+}
+
 export function buildLevel1(sessionsYaml: string, itemsYaml: string, testOutsMd: string, mode: Mode, now = new Date()): LevelContent {
   const sessionsList: RawSession[] = parse(sessionsYaml).sessions
   const sessions = new Map(sessionsList.map((s) => [s.id, s]))
@@ -118,5 +140,5 @@ export function buildLevel1(sessionsYaml: string, itemsYaml: string, testOutsMd:
   if (mode === 'production' && JSON.stringify({ lessons, items }).includes('"draft":true')) {
     throw new ContentError('production build holds draft content')
   }
-  return { level: 1, build: mode, builtAt: now.toISOString(), lessons, items, testOut }
+  return { level: 1, build: mode, builtAt: now.toISOString(), lessons, items, testOut, story: buildStory(sessionsList) }
 }
