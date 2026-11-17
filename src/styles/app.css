@@ -210,13 +210,20 @@ button.story-word-name[aria-expanded='true'] { color: var(--gold); }
 
 /* The whole story, Explore: one line, left to right. Swipe to see it all. */
 .line-scroll {
-  margin: 0 -20px; padding: 6px 20px 14px; overflow-x: auto; overscroll-behavior-x: contain;
-  scroll-snap-type: x proximity; scroll-padding-inline: 20px; -webkit-overflow-scrolling: touch; scrollbar-width: thin;
+  position: relative; margin: 0 -20px; padding: 6px 20px 10px; overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity; scroll-padding-inline: 20px; -webkit-overflow-scrolling: touch; scrollbar-width: none;
 }
+.line-scroll::-webkit-scrollbar { display: none; }
 .line-stages { list-style: none; margin: 0; padding: 0; display: flex; width: max-content; }
 .line-stage { flex: none; width: 330px; display: flex; flex-direction: column; gap: 14px; scroll-snap-align: start; }
-.line-stage-head { display: flex; align-items: center; gap: 12px; padding: 0 12px 0 0; }
+.line-stage-head { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; }
+.line-stage-head .eyebrow { margin: 6px 0 0; }
 .line-picture { display: block; font: 800 20px var(--font-head); }
+.line-pager { display: flex; justify-content: center; gap: 2px; }
+.line-page { width: 32px; height: 32px; display: grid; place-items: center; padding: 0; border: 0; background: none; cursor: pointer; }
+.line-page span { width: 8px; height: 8px; border-radius: 4px; background: var(--line); transition: width .2s, background .2s; }
+.line-page[aria-current] span { width: 22px; background: var(--gold); }
+.line-page.stage-C2[aria-current] span { background: var(--stage-C2); }
 .line-words {
   list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 2.5px solid var(--ink); box-shadow: 0 -6px 12px -8px rgba(255, 210, 63, .5);

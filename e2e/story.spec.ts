@@ -56,3 +56,19 @@ test('explore runs left to right and scrolls sideways to the cross', async ({ pa
   await line.getByRole('button', { name: 'Consummation', exact: true }).click()
   await expect(page.getByText('In the lesson on Consummation', { exact: false })).toBeVisible()
 })
+
+test('each stage picture sits over its middle word, and the dots move along the line', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/#/me')
+  const line = page.getByRole('region', { name: /The whole story, left to right/ })
+  const center = (b: { x: number; width: number } | null) => b!.x + b!.width / 2
+  const pic = await line.getByText('The World', { exact: true }).boundingBox()
+  const ark = await line.getByRole('button', { name: 'Ark', exact: true }).boundingBox()
+  expect(Math.abs(center(pic) - center(ark))).toBeLessThan(3)
+  const first = page.getByRole('button', { name: 'Go to Stage A, The World' })
+  const last = page.getByRole('button', { name: 'Go to Stage C, The Cross' })
+  await expect(first).toHaveAttribute('aria-current', 'true')
+  await last.click()
+  await expect(last).toHaveAttribute('aria-current', 'true')
+  await expect(line.getByRole('button', { name: 'Christ', exact: true })).toBeInViewport()
+})

@@ -4,7 +4,7 @@
  * It never opens a lesson. Each word shows what its lesson holds, locked, so the
  * outline makes the learner want the lessons, not feel done without them.
  */
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import type { StoryStage } from '../lib/types.ts'
 import { PictureDisc } from './Timeline.tsx'
 
@@ -55,35 +55,63 @@ function Teaser({ word, level2Open }: { word: string; level2Open: boolean }) {
 function StoryLine({ story, struck, open, setOpen }: {
   story: StoryStage[]; struck: boolean; open: string | null; setOpen: (w: string | null) => void
 }) {
+  const scroller = useRef<HTMLDivElement>(null)
+  const [at, setAt] = useState(0)
+
+  const stageEls = () => Array.from(scroller.current?.querySelectorAll<HTMLElement>('.line-stage') ?? [])
+  const onScroll = () => {
+    const el = scroller.current
+    if (!el) return
+    if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 4) return setAt(story.length - 1)
+    const stages = stageEls()
+    let best = 0
+    stages.forEach((st, i) => {
+      if (Math.abs(st.offsetLeft - el.scrollLeft) < Math.abs(stages[best].offsetLeft - el.scrollLeft)) best = i
+    })
+    setAt(best)
+  }
+  const goTo = (i: number) => {
+    const el = scroller.current
+    const st = stageEls()[i]
+    if (el && st) el.scrollTo({ left: st.offsetLeft - 20, behavior: 'smooth' })
+  }
+
   return (
-    <div className="line-scroll" role="region" aria-label="The whole story, left to right. Swipe to see it all.">
-      <ol className="line-stages">
-        {story.map((st) => (
-          <li key={st.key} className={`line-stage stage-${st.key}`}>
-            <div className="line-stage-head">
-              <PictureDisc name={st.picture} size={56} struck={struck && st.picture !== 'The Cross'} />
-              <div>
+    <div className="line">
+      <div ref={scroller} onScroll={onScroll} className="line-scroll" role="region" aria-label="The whole story, left to right. Swipe to see it all.">
+        <ol className="line-stages">
+          {story.map((st) => (
+            <li key={st.key} className={`line-stage stage-${st.key}`}>
+              <div className="line-stage-head">
+                <PictureDisc name={st.picture} size={56} struck={struck && st.picture !== 'The Cross'} />
                 <p className="eyebrow">{st.label}</p>
                 <span className="line-picture">{st.picture}</span>
               </div>
-            </div>
-            <ol className="line-words">
-              {st.words.map((w) => {
-                const isOpen = open === w.word
-                return (
-                  <li key={w.word} className="line-word">
-                    <span className="line-dot" aria-hidden="true" />
-                    <button type="button" className="story-word-name line-word-name" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : w.word)}>
-                      {w.word}
-                    </button>
-                    {w.date && <span className="story-date">{w.date}</span>}
-                  </li>
-                )
-              })}
-            </ol>
-          </li>
+              <ol className="line-words">
+                {st.words.map((w) => {
+                  const isOpen = open === w.word
+                  return (
+                    <li key={w.word} className="line-word">
+                      <span className="line-dot" aria-hidden="true" />
+                      <button type="button" className="story-word-name line-word-name" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : w.word)}>
+                        {w.word}
+                      </button>
+                      {w.date && <span className="story-date">{w.date}</span>}
+                    </li>
+                  )
+                })}
+              </ol>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div className="line-pager">
+        {story.map((st, i) => (
+          <button key={st.key} type="button" className={`line-page stage-${st.key}`} aria-label={`Go to ${st.label}, ${st.picture}`} aria-current={i === at ? 'true' : undefined} onClick={() => goTo(i)}>
+            <span aria-hidden="true" />
+          </button>
         ))}
-      </ol>
+      </div>
     </div>
   )
 }
