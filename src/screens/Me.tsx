@@ -1,7 +1,8 @@
 /** Me: levels, the test-out, past results, Share my results, and About. */
 import { CONTENT, useApp } from '../app/app.tsx'
 import { Gap } from '../components/Draft.tsx'
-import { lessonsDoneCount, testOutOpen } from '../lib/progress.ts'
+import { StoryExplorer } from '../components/StoryExplorer.tsx'
+import { lessonsDoneCount, struckPictures, testOutOpen } from '../lib/progress.ts'
 import { ShareResults } from './TestOut.tsx'
 
 export function Me() {
@@ -12,6 +13,7 @@ export function Me() {
   return (
     <main className="screen">
       <h1>Me</h1>
+      <StoryExplorer story={CONTENT.story} struck={struckPictures(CONTENT, state).length > 0} level2Open={state.level2Unlocked} />
       <section className="card" aria-labelledby="lvl-h">
         <p id="lvl-h" className="eyebrow">LEVEL 1 · THE BIBLE IN THREE PICTURES</p>
         <p className="lead">{done} of {CONTENT.lessons.length} lessons done</p>

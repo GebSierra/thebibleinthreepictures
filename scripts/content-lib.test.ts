@@ -66,4 +66,15 @@ describe('content build (T3.1)', () => {
     expect(l4.items[0]).toBe('I1-order-pictures')
     for (const l of c.lessons) expect(l.items.length).toBeGreaterThanOrEqual(3)
   })
+
+  it('builds the whole story: four stages, three words each, five dates, no lesson content', () => {
+    const c = buildLevel1(SESSIONS, ITEMS, TESTOUTS, 'preview')
+    expect(c.story.map((s) => s.picture)).toEqual(['The World', 'Egypt', 'The Land', 'The Cross'])
+    expect(c.story.map((s) => s.label)).toEqual(['Stage A', 'Stage B', 'Stage C', 'Stage C'])
+    expect(c.story.flatMap((s) => s.words.map((w) => w.word))).toEqual([
+      'Adam', 'Ark', 'Abraham', 'Bondage', 'Break Free', 'Battle', 'Crowned', 'Cut', 'Captivity', 'Christ', 'Church', 'Consummation',
+    ])
+    expect(c.story.flatMap((s) => s.words).filter((w) => w.date).length).toBe(5)
+    expect(Object.keys(c.story[0].words[0]).sort()).toEqual(['date', 'word'])
+  })
 })

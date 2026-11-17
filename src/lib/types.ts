@@ -58,6 +58,14 @@ export interface TestOutPart {
   points: number
 }
 
+/** The whole framework, for the explorer on Me. Words and dates only: no lesson content. */
+export interface StoryStage {
+  key: StageKey
+  picture: PictureName
+  label: string
+  words: { word: string; date: string | null }[]
+}
+
 export interface LevelContent {
   level: 1
   build: 'preview' | 'production'
@@ -65,4 +73,5 @@ export interface LevelContent {
   lessons: Lesson[]
   items: Item[]
   testOut: { parts: TestOutPart[]; total: number; pass: number }
+  story: StoryStage[]
 }
