@@ -41,3 +41,18 @@ test('test yourself hides the names until tapped', async ({ page }) => {
   await story.getByRole('button', { name: 'Hide all again' }).click()
   await expect(hidden).toHaveCount(21)
 })
+
+test('explore runs left to right and scrolls sideways to the cross', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.goto('/#/me')
+  const line = page.getByRole('region', { name: /The whole story, left to right/ })
+  const { scroll, client } = await line.evaluate((el) => ({ scroll: el.scrollWidth, client: el.clientWidth }))
+  expect(scroll).toBeGreaterThan(client * 2)
+  const adam = await line.getByRole('button', { name: 'Adam', exact: true }).boundingBox()
+  const ark = await line.getByRole('button', { name: 'Ark', exact: true }).boundingBox()
+  expect(Math.abs(adam!.y - ark!.y)).toBeLessThan(4)
+  expect(ark!.x).toBeGreaterThan(adam!.x)
+  await line.getByRole('button', { name: 'Consummation', exact: true }).scrollIntoViewIfNeeded()
+  await line.getByRole('button', { name: 'Consummation', exact: true }).click()
+  await expect(page.getByText('In the lesson on Consummation', { exact: false })).toBeVisible()
+})

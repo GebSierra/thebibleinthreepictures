@@ -36,6 +36,58 @@ function Hidden({ id, text, test, shown, reveal, className }: {
   )
 }
 
+function Teaser({ word, level2Open }: { word: string; level2Open: boolean }) {
+  return (
+    <div className="story-teaser" role="region" aria-label={`What the lesson on ${word} holds`}>
+      <p className="model-label"><Lock /> IN THE LESSON ON {word.toUpperCase()}</p>
+      <ul>
+        <li>What happened, and why it matters</li>
+        <li>Where Christ shows up</li>
+        <li>The passages to read</li>
+        <li>Questions to think through</li>
+      </ul>
+      <p className="muted small">{level2Open ? 'Level 2, The ABCs, is open to you. Coming soon.' : 'Part of Level 2, The ABCs. It opens when you pass the Level 1 test-out.'}</p>
+    </div>
+  )
+}
+
+/** Explore: the whole line left to right, as in the film. Swipe to see it all. */
+function StoryLine({ story, struck, open, setOpen }: {
+  story: StoryStage[]; struck: boolean; open: string | null; setOpen: (w: string | null) => void
+}) {
+  return (
+    <div className="line-scroll" role="region" aria-label="The whole story, left to right. Swipe to see it all.">
+      <ol className="line-stages">
+        {story.map((st) => (
+          <li key={st.key} className={`line-stage stage-${st.key}`}>
+            <div className="line-stage-head">
+              <PictureDisc name={st.picture} size={56} struck={struck && st.picture !== 'The Cross'} />
+              <div>
+                <p className="eyebrow">{st.label}</p>
+                <span className="line-picture">{st.picture}</span>
+              </div>
+            </div>
+            <ol className="line-words">
+              {st.words.map((w) => {
+                const isOpen = open === w.word
+                return (
+                  <li key={w.word} className="line-word">
+                    <span className="line-dot" aria-hidden="true" />
+                    <button type="button" className="story-word-name line-word-name" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : w.word)}>
+                      {w.word}
+                    </button>
+                    {w.date && <span className="story-date">{w.date}</span>}
+                  </li>
+                )
+              })}
+            </ol>
+          </li>
+        ))}
+      </ol>
+    </div>
+  )
+}
+
 export function StoryExplorer({ story, struck, level2Open }: Props) {
   const [test, setTest] = useState(false)
   const [shown, setShown] = useState<Set<string>>(new Set())
@@ -61,46 +113,34 @@ export function StoryExplorer({ story, struck, level2Open }: Props) {
         </p>
       )}
 
-      <ol className="story-stages">
+      {!test && (
+        <>
+          <StoryLine story={story} struck={struck} open={open} setOpen={setOpen} />
+          {open ? <Teaser word={open} level2Open={level2Open} /> : <p className="hint">Swipe along the line. Tap a word to see what its lesson holds.</p>}
+        </>
+      )}
+
+      {test && <ol className="story-stages">
         {story.map((st) => (
           <li key={st.key} className={`story-stage stage-${st.key}`}>
             <div className="story-stage-head">
               <PictureDisc name={st.picture} size={52} struck={struck && st.picture !== 'The Cross'} />
               <div>
                 <p className="eyebrow">{st.label}</p>
-                <Hidden id={`p-${st.key}`} text={st.picture} test={test} shown={shown} reveal={reveal} className="story-picture" />
+                <Hidden id={`p-${st.key}`} text={st.picture} test shown={shown} reveal={reveal} className="story-picture" />
               </div>
             </div>
             <ol className="story-words">
               {st.words.map((w) => {
                 const id = `w-${w.word}`
-                const isOpen = !test && open === w.word
                 return (
                   <li key={w.word} className="story-word">
                     <span className="story-dot" aria-hidden="true" />
                     <div className="story-word-body">
                       <div className="story-word-row">
-                        {test ? (
-                          <Hidden id={id} text={w.word} test shown={shown} reveal={reveal} className="story-word-name" />
-                        ) : (
-                          <button type="button" className="story-word-name" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : w.word)}>
-                            {w.word}
-                          </button>
-                        )}
-                        {w.date && <Hidden id={`d-${w.word}`} text={w.date} test={test} shown={shown} reveal={reveal} className="story-date" />}
+                        <Hidden id={id} text={w.word} test shown={shown} reveal={reveal} className="story-word-name" />
+                        {w.date && <Hidden id={`d-${w.word}`} text={w.date} test shown={shown} reveal={reveal} className="story-date" />}
                       </div>
-                      {isOpen && (
-                        <div className="story-teaser">
-                          <p className="model-label"><Lock /> IN THE LESSON ON {w.word.toUpperCase()}</p>
-                          <ul>
-                            <li>What happened, and why it matters</li>
-                            <li>Where Christ shows up</li>
-                            <li>The passages to read</li>
-                            <li>Questions to think through</li>
-                          </ul>
-                          <p className="muted small">{level2Open ? 'Level 2, The ABCs, is open to you. Coming soon.' : 'Part of Level 2, The ABCs. It opens when you pass the Level 1 test-out.'}</p>
-                        </div>
-                      )}
                     </div>
                   </li>
                 )
@@ -108,7 +148,7 @@ export function StoryExplorer({ story, struck, level2Open }: Props) {
             </ol>
           </li>
         ))}
-      </ol>
+      </ol>}
 
       <p className="story-foot">
         You can say the outline. The lessons show you why the three pictures fall, and why the cross stands.
